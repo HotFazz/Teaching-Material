@@ -6,7 +6,7 @@ def visualize_sort(values, current=None, next=None):
     colors = ['red' if x==next else 'green' if x==current else 'gray' for x in range(len(values))]
     plt.bar(range(len(values)), values, color=colors)
     plt.show(block=False)
-    plt.pause(0.1)
+    plt.pause(0.01)
     plt.clf()
 
 def bubble_sort(values):
